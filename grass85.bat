@@ -1,0 +1,18 @@
+@echo off
+rem #########################################################################
+rem #
+rem # GRASS initialization bat script (OSGeo4W)
+rem #
+rem #########################################################################
+
+rem
+rem Set environmental variables
+rem
+call "%~dp0\o4w_env.bat"
+call "%OSGEO4W_ROOT%\apps\grass\grass85\etc\env.bat"
+@echo off
+
+rem
+rem Launch GRASS
+rem
+"%GRASS_PYTHON%" "%GISBASE%\etc\grass85.py" %*
